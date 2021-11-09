@@ -1,0 +1,164 @@
+.vegetables ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    }
+  .vegetables ul li {
+    list-style: none;
+    background-color: #4d7298;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 0 10px 10px 0;
+    color: white;
+    border-radius: 10px;
+    border: solid 2px #77a686;
+  }
+  .pseudo-elements h2 {
+    font-family: sans-serif;
+    margin: 100px auto;
+    font-size: 30px;
+    max-width: 600px;
+    position: relative;
+  }
+  .pseudo-elements h2:before {
+    content: "";
+    width: 150px;
+    height: 5px;
+    background: #808080;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .pseudo-elements h2:after {
+    content: "";
+    width: 150px;
+    height: 5px;
+    background: #808080;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .parent {
+    width: 100%;
+    display: flex;
+  }
+  .child{
+    width: 60%;
+    padding: 0 80px 0 10px;
+  }
+  @media screen and (max-width: 480px) {
+    .parent {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .child {
+      width: 100%;
+    }
+  }
+  .notes-child{
+    width: 40%;
+    padding-left: 10px;
+  }
+  @media screen and (max-width: 480px) {
+    .notes-child {
+      width: 100%;
+    }
+  }
+  .excepteur-link{
+    color: red;
+    text-decoration: none;
+  }
+  .travel-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+  .notes-child p{
+    color: red;
+  }
+  .register-form{
+    width: 800px;
+  /*   border: solid 10px #77a686; */
+    margin: 50px 0 0 50px;
+    border-style: solid;
+    border-width: 10px;
+    border-image: linear-gradient(45deg, rgb(0,255,255),rgb(0,0,128), rgb(128,0,128)) 1;
+  }
+  .register-form h3 {
+    margin: 0;
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding-top: 15px;
+    margin-bottom: 35px;
+  }
+  .register-form form {
+    padding-left: 50px;
+    font-size: 20px; 
+  }
+  .register-form .outer {
+    width: 70%;
+    display: flex;
+  }
+  .register-form .tag {
+    width: 15%;
+    float: left;
+    text-align: left;
+    padding: 10px;
+  }
+  .input {
+    width: 85%;
+    float: left;
+    
+  }
+  .register-form .text-field {
+    height:50px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #d9d9d9; 
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+  }
+  .input-name{
+    width: 85%;
+    display: flex;
+    padding-bottom: 20px;
+    
+  }
+  .register-form #fname {
+    width: 50%;
+    margin-right: 20px;
+  }
+  .register-form #lname {
+    width: 50%;
+  }
+  .register-form #areacode {
+    width: 30%;
+    margin-right: 20px;
+  }
+  .register-form #tel {
+    width: 70%;
+  }
+  .customer-radio {
+    display: flex;
+  }
+  .register-button {
+    height: 50px;
+    width: 150px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: #dc143c;
+    border: none;
+    border-radius: 5px;
+    
+  }
+  
+  
+  
+  

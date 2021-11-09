@@ -1,0 +1,165 @@
+h4 {
+  margin-left: 15px;
+}
+
+main-body {
+  width: 100%;
+}
+
+.blocks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 400px 400px;
+      grid-template-columns: 400px 400px 400px;
+  grid-gap: 20px 20px;
+  margin-left: 15px;
+}
+
+@media (max-width: 1024px) {
+  .blocks {
+    -ms-grid-columns: 350px 350px;
+        grid-template-columns: 350px 350px;
+    grid-gap: 15px 15px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blocks__banner-block {
+    width: 280px;
+  }
+  .blocks__title-one {
+    width: 250px;
+    margin-left: 15px;
+  }
+  .blocks__title-two {
+    width: 250px;
+    margin-left: 15px;
+  }
+  .blocks__title-three {
+    width: 250px;
+    margin-left: 15px;
+  }
+  .blocks__title-four {
+    width: 250px;
+    margin-left: 15px;
+  }
+}
+
+.blocks__banner-block {
+  text-align: center;
+  height: 150px;
+  padding: 30px;
+  background-color: skyblue;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  color: blue;
+}
+
+.blocks__title-one {
+  text-align: center;
+  height: 150px;
+  padding: 30px;
+  background-color: pink;
+  color: #F08080;
+}
+
+.blocks__title-two {
+  text-align: center;
+  height: 150px;
+  padding: 30px;
+  background-color: pink;
+  color: #3CB371;
+}
+
+.blocks__title-three {
+  text-align: center;
+  height: 150px;
+  padding: 30px;
+  background-color: lightgreen;
+  color: #3CB371;
+}
+
+.blocks__title-four {
+  text-align: center;
+  height: 150px;
+  padding: 30px;
+  background-color: lightgrey;
+  color: #3CB371;
+}
+
+.btn {
+  display: -ms-grid;
+  display: grid;
+  margin: 10px;
+  padding: 10px 0 10px 0;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn--small {
+  width: 160px;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .btn--small {
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn--small {
+    width: 310px;
+  }
+}
+
+.btn--medium {
+  width: 240px;
+  background-color: blue;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .btn--medium {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn--medium {
+    width: 310px;
+  }
+}
+
+.btn--large {
+  width: 280px;
+  background-color: lightgrey;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .btn--large {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn--large {
+    width: 310px;
+  }
+}
+/*# sourceMappingURL=sabbuddassignmentnexttask.css.map */

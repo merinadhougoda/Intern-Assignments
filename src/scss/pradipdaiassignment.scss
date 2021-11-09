@@ -1,0 +1,175 @@
+@mixin button-design {
+    padding: 8px 15px 8px 15px;
+    margin-top: 50px;
+    color: white;
+    border: none;
+  }
+  $block-width: 250px;
+  $tablet-block-width: 350px;
+  $paragraph-font-size: 14px;
+  $breakpoint-tablet: 1024px;
+  $breakpoint-mobile: 768px;
+  $primary-color: #DC143C;
+  $text-color: #979797;
+  $font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  .services-section{
+    background-color: #F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 500px;
+    text-align: center;
+    margin: 60px;
+    @media (max-width: $breakpoint-mobile) {
+      height: 1150px;
+      margin: 20px;
+    }
+    .header-title {
+      padding: 30px 0 15px 0;
+      p {
+        font-size: $paragraph-font-size;
+      }
+    }
+    .cards {
+      height: 300px;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin: 20px;
+      @media(max-width: $breakpoint-tablet) {
+        height: 340px;
+        padding: 12px;
+      }
+      @media(max-width: $breakpoint-mobile) {
+        height: 900px;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      .card {
+        width: $block-width;
+        margin: 20px;
+        h4 {
+          padding-top: 20px;
+        }
+        p {
+          font-size: $paragraph-font-size;
+          padding: 10px;
+        }
+        
+        &--block-one {
+          background-color: white;
+  
+          .btn-block-one {
+            @include button-design;
+            background-color: #696969;
+          }
+        }
+        &--block-two {
+          background-color: #CCFFFF;
+  
+          .btn-block-two {
+            @include button-design;
+            background-color: blue;
+          }
+        }
+        &--block-three {
+          background-color: #E4D4C8;
+  
+          .btn-block-three {
+            @include button-design;
+            background-color: #3B3B3B;
+          }
+        }
+        &--block-four {
+          background-color: #FFCCFF;
+  
+          .btn-block-four {
+            @include button-design;
+            background-color: #FF647F;
+          }
+        }
+        @media(max-width: $breakpoint-tablet) {
+          margin: 8px;
+        }
+        @media(max-width: $breakpoint-mobile) {
+          padding: 10px;
+          width: 90%;
+          height: 300px;
+        }
+      }
+    }  
+  }
+
+
+
+.feature-section{
+  margin: 50px;
+  background-color: #FFFFFF;
+  font-family: $font;
+  &__header {
+    text-align: center;
+    h2 {
+      margin: 15px;
+      color: $primary-color;
+    }
+    p {
+      color: $text-color;
+    }
+  }
+  &__content {
+    margin: 40px;
+    .feature-info {
+      display: flex;
+      justify-content: space-around;
+      margin: 30px 100px 0 100px;
+      .info-details{
+        margin-top: 80px;
+        width: 400px;
+        p{
+          color: $text-color;
+          margin-top: 10px;
+        }
+        .feature-btn {
+          margin-top: 15px;
+          padding: 10px;
+          background-color: $primary-color;
+          color: white;
+          border: none;
+        }
+      }
+      .info-image {
+        img {
+          height: 300px;
+          width: 300px;
+          border-radius: 50%;
+          border: solid 10px #ffddf4;
+        }
+      }
+      @media (max-width: $breakpoint-tablet) {
+        margin: 20px;
+        .info-image {
+          margin: 20px;
+        }
+      }
+      @media (max-width: $breakpoint-mobile) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+    @media (max-width: $breakpoint-tablet) {
+        margin: 0;
+      }
+    @media (max-width: $breakpoint-mobile) {
+        margin: 0;
+      }
+  }
+}
+
+

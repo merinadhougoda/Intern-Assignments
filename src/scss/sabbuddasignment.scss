@@ -1,0 +1,130 @@
+@mixin line {
+  content: "";
+  width: 150px;
+  height: 5px;
+  background: #808080;
+  top: 50%;
+  position: absolute;
+}
+$breakpoint-mobile: 480px;
+$blue: #0316BB;
+$green: #03BB2C;
+$title-color: #3A3A3A;
+$body-color: #858585;
+$body-background-color: #EBEBFF;
+$child-block-background-color: #ffff;
+
+.pseudo-elements{
+  h2{
+    font-family: sans-serif;
+    margin:100px auto;
+    text-align: center;
+    font-size: 30px;
+    max-width: 600px;
+    position: relative;
+    
+    &:before{
+      @include line;
+      left: 0;
+    }
+    
+    &:after{
+      @include line;
+      right: 0;
+    }
+  } 
+}
+.media-parent {
+  width: 100%;
+  display: flex;
+  @media(max-width: $breakpoint-mobile) {
+  display: block;
+  }
+  .child {
+    width: 60%;
+    padding: 0 80px 0 10px;
+    @media(max-width: $breakpoint-mobile) {
+    width: 100%;
+    }
+      .excepteur-link{
+      color: red;
+      text-decoration: none;
+      }
+      .travel-link{
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+      }
+  }
+  .notes-child{
+    width: 40%;
+    padding-left: 10px;
+    @media(max-width: $breakpoint-mobile) {
+    width: 100%;
+    }
+     p{
+        color: red;
+     }
+  }
+}
+.body {
+  background-color: $body-background-color;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 600px;
+  margin: 50px 0 0 50px;
+  height: 720px;
+  
+  h1 {
+    color: #cd5c5c;
+    font-size: 50px;
+    margin: 10px;
+    font-weight: 10;
+  }
+  .blocks {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-gap: 20px 20px;
+    margin-left: 10px;
+   
+    .child-block {
+      background-color: $child-block-background-color;
+      padding: 10px;
+      
+      h2 {
+        color: $title-color;
+      }
+      p {
+        color: $body-color;
+      }
+      .css-img{
+        margin-left: 28px;
+      }
+    }
+    .title-four{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    %button-design {
+      width: 200px;
+      height: 50px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
+      margin: 10px 0 0 25px;
+    }
+    .green-button {
+      @extend %button-design;
+      background-color: $green;
+    }
+    .blue-button {
+      @extend %button-design;
+      background-color: $blue;
+    }
+  }
+}
+

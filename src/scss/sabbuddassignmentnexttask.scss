@@ -1,0 +1,124 @@
+$text-color: #3CB371;
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 768px;
+$mobile-btn-width:155;
+@mixin block-design{
+  text-align: center;
+  height: 150px;
+  padding: 30px;
+}
+@mixin mobile-block{
+  width: 250px;
+  margin-left: 15px;
+}
+@function btnWidth($width) {
+  @return 2 * $width + px;
+}
+h4 {
+  margin-left: 15px;
+}
+main-body {
+  width: 100%;
+}
+.blocks {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 20px 20px;
+  margin-left: 15px;
+  @media(max-width: $breakpoint-tablet) {
+    grid-template-columns: 350px 350px;
+    grid-gap: 15px 15px;
+    margin-left: 10px;
+  }
+  @media(max-width: $breakpoint-mobile) {
+    display: flex;
+    flex-direction: column;
+    &__banner-block{
+      width: 280px;
+    }
+    &__title-one {
+      @include mobile-block;
+    }
+    &__title-two {
+      @include mobile-block;
+    }
+    &__title-three {
+      @include mobile-block;
+    }
+    &__title-four {
+      @include mobile-block;
+    }
+  }
+  
+  &__banner-block {
+    @include block-design;
+    background-color: skyblue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: blue;
+    }
+  
+  &__title-one{
+    @include block-design;
+    background-color: pink;
+    color: #F08080;
+  }
+  &__title-two{
+    @include block-design;
+    background-color: pink;
+    color: $text-color;
+  }
+  &__title-three{
+    @include block-design;
+    background-color: lightgreen;
+    color: $text-color;
+  }
+  &__title-four{
+    @include block-design;
+    background-color: lightgrey;
+    color: $text-color;
+  }
+}
+.btn {
+  display: grid;
+  margin: 10px;
+  padding: 10px 0 10px 0;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+  &--small{
+    width: btnWidth(80);
+    background-color: black;
+    color: white;
+    @media(max-width: $breakpoint-tablet){
+      width:btnWidth(60);
+    }
+    @media(max-width: $breakpoint-mobile){
+      width:btnWidth($mobile-btn-width);
+    }
+  }
+   &--medium{
+    width: btnWidth(120);
+    background-color: blue;
+    color: white;
+    @media(max-width: $breakpoint-tablet){
+      width:btnWidth(100);
+    }
+    @media(max-width: $breakpoint-mobile){
+      width:btnWidth($mobile-btn-width);
+    }
+  }
+   &--large{
+    width: btnWidth(140);
+    background-color: lightgrey;
+    color: black;
+    @media(max-width: $breakpoint-tablet){
+      width:btnWidth(150);
+    }
+    @media(max-width: $breakpoint-mobile){
+      width:btnWidth($mobile-btn-width);
+    }
+  } 
+}
