@@ -6,6 +6,7 @@ const sass = require('gulp-sass')(require('sass'));
 const prefix = require('gulp-autoprefixer');
 const minify = require('gulp-clean-css');
 const imagewebp = require('gulp-webp');
+const optimage = require('gulp-image');
 
 
 //create functions 
@@ -26,6 +27,12 @@ function compilescss () {
 }
 
 //Images
+function optimizeimage() {
+    return src('src/images/*.{jpg,png}')
+    .pipe(optimage())
+    .pipe(dest('dist/images'))
+}
+
 function webpImage() {
     return src('src/images/*.{jpg,png}')
     .pipe(imagewebp())
@@ -41,6 +48,7 @@ function watchtask() {
 exports.default = series(
     minhtml,
     compilescss,
+    optimizeimage,
     webpImage,
     watchtask
 );
