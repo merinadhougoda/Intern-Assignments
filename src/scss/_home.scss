@@ -1,0 +1,28 @@
+
+.image-panel {
+    background-color: $body-color;
+    .intro {
+        padding-top: 6rem;
+        width: 60%;    
+        h2 {
+            font-size: 42px;
+            font-weight: bold;
+            span {
+                color: $primary-color;
+            }
+        }
+        p {
+            font-size: 16px;
+            color: $font-color;
+        }
+        .hire-btn {
+            background-color: $primary-color;
+            padding: 16px 32px 16px 32px;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+    .panel-image {
+        padding-left: 5rem;
+    }
+}

@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.image-panel {
+  background-color: #FFFFFF;
+}
+
+.image-panel .intro {
+  padding-top: 6rem;
+  width: 60%;
+}
+
+.image-panel .intro h2 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.image-panel .intro h2 span {
+  color: #FFB80D;
+}
+
+.image-panel .intro p {
+  font-size: 16px;
+  color: #767676;
+}
+
+.image-panel .intro .hire-btn {
+  background-color: #FFB80D;
+  padding: 16px 32px 16px 32px;
+  border: none;
+  border-radius: 5px;
+}
+
+.image-panel .panel-image {
+  padding-left: 5rem;
+}
+
+.service-section {
+  margin-top: 6rem;
+}
+
+.service-section .headings {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+.service-section .headings p {
+  color: #767676;
+}
+
+.service-section .services .service-icons {
+  font-size: 80px;
+  color: #FFB80D;
+}
+
+.service-section .services h4 {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.service-section .services p {
+  font-size: 15px;
+  color: #767676;
+}
+
+.price-plans .headings {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+.price-plans .headings p {
+  color: #767676;
+}
+
+.price-plans .plans .plans-block h5 {
+  padding-top: 25px;
+}
+
+.price-plans .plans .plans-block p {
+  color: #767676;
+}
+
+.price-plans .plans .plans-block .price {
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+
+.price-plans .plans .plans-block .tag {
+  background-color: #FFB80D;
+  color: black;
+}
+
+.price-plans .plans .plans-block ul {
+  text-align: left;
+  color: #767676;
+  font-size: 15px;
+  list-style: none;
+}
+
+.price-plans .plans .plans-block ul li {
+  padding-bottom: 15px;
+}
+
+.price-plans .plans .plans-block ul span {
+  padding-right: 10px;
+}
+
+.price-plans .plans .plans-block ul .check {
+  color: #FFB80D;
+}
+
+.price-plans .plans .plans-block .order-btn {
+  border: none;
+  border-radius: 30px;
+  padding: 12px 40px 12px 40px;
+  -webkit-box-shadow: 2px 2px #767676;
+          box-shadow: 2px 2px #767676;
+}
+
+.price-plans .plans .plans-block .active-order {
+  border: none;
+  border-radius: 30px;
+  padding: 12px 40px 12px 40px;
+  -webkit-box-shadow: 2px 2px #767676;
+          box-shadow: 2px 2px #767676;
+  background-color: #FFB80D;
+}
+
+.recommendation-section .headings {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+.recommendation-section .headings p {
+  color: #767676;
+}
+
+.recommendation-section .recommended-users .card-body {
+  padding: 25px;
+}
+
+.recommendation-section .recommended-users .card-body .rec-icon {
+  color: #FFB80D;
+}
+
+.recommendation-section .recommended-users .card-body h5 {
+  padding: 5px;
+}
+
+.recommendation-section .recommended-users .card-body p {
+  color: #767676;
+}
+
+.recommendation-section .recommended-users .card-body .user-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recommendation-section .recommended-users .card-body .user-profile__user-info {
+  margin-left: 80px;
+}
+
+.mid-section .headings {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+.mid-section .headings p {
+  color: #767676;
+}
+
+.mid-section .courses {
+  background-color: #FFFFFF;
+}
+
+.mid-section .courses h6 {
+  padding: 10px 0 20px 0;
+}
+
+.mid-section .courses .date {
+  background-color: #FFB80D;
+  color: white;
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.mid-section .courses p {
+  color: #767676;
+  font-size: 15px;
+}
+
+.portfolio-section .headings {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+.portfolio-section .headings p {
+  color: #767676;
+}
+
+.portfolio-section .portfolio-body .navigation {
+  text-align: center;
+}
+
+.portfolio-section .portfolio-body .navigation ul {
+  list-style: none;
+}
+
+.portfolio-section .portfolio-body .navigation ul li {
+  display: inline;
+}
+
+.portfolio-section .portfolio-body .navigation ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.portfolio-section .portfolio-body .navigation ul a:hover {
+  color: #FFB80D;
+}
+
+.portfolio-section .portfolio-body .portfolio-images .pro-images {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.portfolio-section .portfolio-body .portfolio-images .pro-images::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FFB80D;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolio-section .portfolio-body .portfolio-images .pro-images:hover::after {
+  top: 0;
+  opacity: 0.8;
+}
+
+.blog-section .headings {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+.blog-section .headings p {
+  color: #767676;
+}
+
+.blog-section .blog-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-section .blog-body .card--blog-card .card-body a {
+  text-decoration: none;
+  color: #FFB80D;
+}
+
+.contact-section .contacts--form .contact-btn {
+  padding: 10px 25px 10px 25px;
+  border: none;
+  background-color: #FFB80D;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.contact-section .contacts--info {
+  text-align: center;
+}
+
+.contact-section .contacts--info .plans-block {
+  margin-bottom: 10px;
+}
+
+.contact-section .contacts--info .plans-block .contact-icon {
+  font-size: 15px;
+  background-color: #FFB80D;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.contact-section .contacts--info .plans-block .info-block {
+  margin-top: 30px;
+}
+
+.contact-section .contacts--info .plans-block .info-block .informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-section .contacts--info .plans-block .info-block .informations p {
+  text-align: right;
+}
+
+.footer {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  color: black;
+}
+
+body {
+  background: #E4E6EB;
+  height: 100vh;
+}
+/*# sourceMappingURL=main.css.map */

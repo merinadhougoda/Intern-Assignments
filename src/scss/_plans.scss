@@ -1,0 +1,49 @@
+.price-plans {  
+    .headings {
+        @include heading-info();
+        p {
+            color: $font-color;
+        }
+    }
+    .plans {
+        .plans-block {
+            h5 {
+                padding-top: 25px;
+            }
+            p {
+                color: $font-color;
+            }
+            .price {
+                font-weight: bold;
+                font-size: 30px;
+                color: black;
+            }
+            .tag {
+                background-color: $primary-color;
+                color: black;
+            }
+            ul {
+                text-align: left;
+                color: $font-color;
+                font-size: 15px;
+                list-style: none;
+                li {
+                    padding-bottom: 15px;
+                }
+                span {
+                    padding-right: 10px;
+                }
+                .check {
+                    color: $primary-color;
+                }
+            }
+            .order-btn {
+                @include order-botton();
+            }
+            .active-order {
+                @include order-botton();
+                background-color: $primary-color;
+            }
+        }
+    }
+}

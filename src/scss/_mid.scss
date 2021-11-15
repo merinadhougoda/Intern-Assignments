@@ -1,0 +1,25 @@
+.mid-section {
+    .headings {
+        @include heading-info();
+        p {
+            color: $font-color;
+        }
+    }
+    .courses {
+        background-color: $body-color;
+
+        h6 {
+            padding: 10px 0 20px 0;
+        }
+        .date {
+            background-color: $primary-color;
+            color: white;
+            margin-left: 10px;
+            font-size: 10px;
+        }
+        p {
+            color: $font-color;
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.blog-section {
+    .headings {
+        @include heading-info();
+        p {
+            color: $font-color;
+        }
+    }
+    .blog-body {
+        display: flex;
+        .card {
+            &--blog-card{
+                .card-body {
+                    a {
+                        text-decoration: none;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}

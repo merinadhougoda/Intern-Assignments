@@ -1,0 +1,28 @@
+.recommendation-section {
+    .headings {
+        @include heading-info();
+        p {
+            color: $font-color;
+        }
+    }
+    .recommended-users {
+        .card-body {
+            padding: 25px;
+            .rec-icon {
+                color: $primary-color
+            }
+            h5 {
+                padding: 5px;
+            }
+            p {
+                color: $font-color
+            }
+            .user-profile {
+                display: flex;
+                &__user-info {
+                    margin-left: 80px;
+                }
+            }
+        }
+    }
+}

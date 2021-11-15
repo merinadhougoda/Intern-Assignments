@@ -1,0 +1,21 @@
+$primary-color: #FFB80D;
+$font-color: #767676;
+$body-color: #FFFFFF;
+@mixin order-botton {
+    border: none;
+    border-radius: 30px;
+    padding: 12px 40px 12px 40px;
+    box-shadow: 2px 2px $font-color;
+}
+@mixin heading-info {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+@mixin transition-ease {
+    transition:  all 0.5s ease-in-out;
+}
+* {
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,23 @@
+.service-section {
+    margin-top: 6rem;
+    .headings {
+        @include heading-info();
+        p {
+            color: $font-color;
+        }
+    }
+    .services {
+        .service-icons{
+            font-size: 80px;
+            color: $primary-color;
+        }
+        h4{
+            padding-top: 20px;
+            font-size: 18px;
+        }
+        p {
+            font-size: 15px;
+            color: $font-color;
+        }
+    }
+}

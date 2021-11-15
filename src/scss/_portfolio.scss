@@ -1,0 +1,55 @@
+.portfolio-section {
+    .headings {
+        @include heading-info();
+        p {
+            color: $font-color;
+        }
+    }
+    .portfolio-body {
+        .navigation {
+            text-align: center;
+            ul {
+                list-style: none;
+                
+                li {
+                    display: inline;
+                }
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 18px;
+                    padding: 5px;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        .portfolio-images {
+            .pro-images {
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: $primary-color;
+                    opacity: 0;
+                    @include transition-ease;
+                }
+                &:hover {
+                    &::after {
+                        top: 0;
+                        opacity: 0.8;
+                    }
+                }
+                
+            }
+        }
+    }
+}
