@@ -7,6 +7,11 @@
     }
     .plans {
         .plans-block {
+            h6 {
+                background-color: $primary-color;
+                width: 100%;
+                padding: 10px;
+            }
             h5 {
                 padding-top: 25px;
             }
@@ -35,6 +40,9 @@
                 }
                 .check {
                     color: $primary-color;
+                }
+                .check-text {
+                    color: black;
                 }
             }
             .order-btn {

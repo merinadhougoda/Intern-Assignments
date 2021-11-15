@@ -76,6 +76,12 @@
   color: #767676;
 }
 
+.price-plans .plans .plans-block h6 {
+  background-color: #FFB80D;
+  width: 100%;
+  padding: 10px;
+}
+
 .price-plans .plans .plans-block h5 {
   padding-top: 25px;
 }
@@ -112,6 +118,10 @@
 
 .price-plans .plans .plans-block ul .check {
   color: #FFB80D;
+}
+
+.price-plans .plans .plans-block ul .check-text {
+  color: black;
 }
 
 .price-plans .plans .plans-block .order-btn {
@@ -317,15 +327,15 @@
   text-align: right;
 }
 
+body {
+  background: #E4E6EB;
+  height: 100vh;
+}
+
 .footer {
   background-color: #FFFFFF;
   text-align: center;
   padding: 10px;
   color: black;
-}
-
-body {
-  background: #E4E6EB;
-  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

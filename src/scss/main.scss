@@ -7,10 +7,15 @@
 @import 'portfolio';
 @import 'blog';
 @import 'contact';
-@import 'footer';
 
 body {
     background: #E4E6EB;
     height: 100vh;
     
+}
+.footer {
+    background-color: $body-color;
+    text-align: center;
+    padding: 10px;
+    color: black;
 }
