@@ -16,3 +16,5 @@ Steps to run the project:
 - git clone https://github.com/merinadhougoda/Intern-Assignments.git
 
 -git checkout bootstrap
+
+-go to src/index.html.
