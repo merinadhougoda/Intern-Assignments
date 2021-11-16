@@ -25,6 +25,13 @@ function compilescss () {
     .pipe(minify())
     .pipe(dest('dist/scss'))
 }
+//css
+function compilecss () {
+    return src('src/scss/*.css')
+    .pipe(minify())
+    .pipe(dest('dist/css'))
+
+}
 
 //Images
 function optimizeimage() {
@@ -48,6 +55,7 @@ function watchtask() {
 exports.default = series(
     minhtml,
     compilescss,
+    compilecss,
     optimizeimage,
     webpImage,
     watchtask

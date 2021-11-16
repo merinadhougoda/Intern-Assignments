@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: 
+        url('../../fonts/Ubuntu-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Proxima';
+    src: 
+        url('../../fonts/Proxima\ Nova\ Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../../icons/icomoon.eot?t9zjmc');
+    src:  url('../../icons/icomoon.eot?t9zjmc#iefix') format('embedded-opentype'),
+      url('../../icons/icomoon.ttf?t9zjmc') format('truetype'),
+      url('../../icons/icomoon.woff?t9zjmc') format('woff'),
+      url('../../icons/icomoon.svg?t9zjmc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-fb_messenger_logo_social-media_icon:before {
+    content: "\e900";
+  }
+  .icon-applications_media_social_wechat_icon .path1:before {
+    content: "\e901";
+    color: rgb(0, 211, 50);
+  }
+  .icon-applications_media_social_wechat_icon .path2:before {
+    content: "\e902";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-applications_media_social_wechat_icon .path3:before {
+    content: "\e903";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-logo_whatsapp_icon .path1:before {
+    content: "\e904";
+    color: rgb(44, 183, 66);
+  }
+  .icon-logo_whatsapp_icon .path2:before {
+    content: "\e905";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-logo_whatsapp_icon .path3:before {
+    content: "\e906";
+    margin-left: -1em;
+    color: rgb(44, 183, 66);
+  }
+  .icon-video_youtube_icon .path1:before {
+    content: "\e907";
+    color: rgb(224, 47, 47);
+  }
+  .icon-video_youtube_icon .path2:before {
+    content: "\e908";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-logo_viber_icon .path1:before {
+    content: "\e909";
+    color: rgb(131, 73, 149);
+  }
+  .icon-logo_viber_icon .path2:before {
+    content: "\e90a";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-logo_viber_icon .path3:before {
+    content: "\e90b";
+    margin-left: -1em;
+    color: rgb(131, 73, 149);
+  }
+  .icon-logo_viber_icon .path4:before {
+    content: "\e90c";
+    margin-left: -1em;
+    color: rgb(131, 73, 149);
+  }
+  .icon-logo_viber_icon .path5:before {
+    content: "\e90d";
+    margin-left: -1em;
+    color: rgb(131, 73, 149);
+  }
+  .icon-logo_viber_icon .path6:before {
+    content: "\e90e";
+    margin-left: -1em;
+    color: rgb(131, 73, 149);
+  }
+  .icon-applications_linkedin_social_social-media_icon .path1:before {
+    content: "\e90f";
+    color: rgb(0, 127, 181);
+  }
+  .icon-applications_linkedin_social_social-media_icon .path2:before {
+    content: "\e910";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-applications_linkedin_social_social-media_icon .path3:before {
+    content: "\e911";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-applications_linkedin_social_social-media_icon .path4:before {
+    content: "\e912";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-pinterest_social_social-media_icon:before {
+    content: "\e913";
+    color: #ca2028;
+  }
+  .icon-bird_tweet_twitter_twitter-logo_icon:before {
+    content: "\e914";
+    color: #1da1f2;
+  }
+  .icon-camera_instagram_instagram-logo_icon:before {
+    content: "\e915";
+  }
+  .icon-facebook_social-media_social_icon .path1:before {
+    content: "\e916";
+    color: rgb(59, 89, 152);
+  }
+  .icon-facebook_social-media_social_icon .path2:before {
+    content: "\e917";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  $header-font: Proxima;
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    h1 {
+        text-align: center;
+        padding: 20px;
+        font-family: $header-font;
+    }
+    p {
+        font-family: Ubuntu;
+    }
+    .blog-section {
+        background-color: 	#cbffcb;
+        padding-bottom: 50px;
+        &__headings {
+            padding-top: 25px;
+            text-align: center;
+            width: 500px;
+            margin: auto;
+            h3 {
+                font-family: $header-font;
+            }
+            
+        }
+        &__blogs {
+            .blogs-block {
+                border-radius: 20px;
+                h3 {
+                    font-family: $header-font;
+                }
+                .blog-btn {
+                    border: none;
+                    padding: 10px 16px 10px 16px;
+                    border-radius: 15px;
+                    background-color: #D3D3D3;
+                    font-family: Ubuntu;
+                }
+            }
+        }
+        .social-media {
+            h3 {
+                text-align: center;
+                padding: 25px;
+                font-family: $header-font;
+            }
+            .icons {
+                font-size: 50px;
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+    }
+}
