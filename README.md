@@ -3,4 +3,4 @@ Assignments
 
 
 To run projects :
--go to src/project name
+-go to src/<projectname>.html
