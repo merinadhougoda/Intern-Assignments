@@ -1,0 +1,30 @@
+.container {
+  padding: 0 1em;
+  width: 50%;
+}
+
+.container ul {
+  padding-inline-start: 0;
+}
+
+.container li {
+  background: rgb(13, 123, 167);
+  color: #fff;
+  padding: 1em;
+  margin: 0.5em 0;
+}
+
+.accordion {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+  padding: 0.75em;
+  width: 20%;
+}
+
+.accordion-content {
+  display: none;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
