@@ -6,7 +6,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.counter {
+body .counter {
   width: 100%;
   height: 100vh;
   background: #508AA1;
@@ -26,7 +26,7 @@ body {
   text-align: center;
 }
 
-.counter-body {
+body .counter .counter-body {
   width: 25%;
   height: 350px;
   background-color: #f4f4f4;
@@ -46,7 +46,7 @@ body {
           align-items: center;
 }
 
-.input_field {
+body .counter .counter-body .input_field {
   width: 90%;
   height: 30px;
   background-color: #BFCBD0;
@@ -55,7 +55,7 @@ body {
   padding: 5px;
 }
 
-h1 {
+body .counter .counter-body h1 {
   color: white;
   background: transparent;
   background-color: #6C918B;
@@ -64,7 +64,7 @@ h1 {
   width: 90%;
 }
 
-button {
+body .counter .counter-body button {
   min-height: 40px;
   border-radius: 5%;
   border-color: transparent;
@@ -78,11 +78,11 @@ button {
   margin-top: 30px;
 }
 
-button:hover {
+body .counter .counter-body button:hover {
   background-color: #415753;
 }
 
-.counter-btn {
+body .counter .counter-body .counter-btn {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
