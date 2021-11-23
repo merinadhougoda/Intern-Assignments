@@ -5,11 +5,6 @@ const Counter = () => {
     const [newValue, setValue] = useState();
     const [num, setNum] = useState(0);
 
-    const valueEvent = (e) => {
-        const number = Number(e.target.value);
-        setValue(number);
-        setNum(number);
-    }
 
     const increaseNum = () => {
         setNum(num + 1);
@@ -23,6 +18,12 @@ const Counter = () => {
             setNum(0);
         }
     };
+
+    const valueEvent = (e) => {
+        const number = Number(e.target.value);
+        setValue(number);
+        setNum(number);
+    }
 
     return (
         <>
